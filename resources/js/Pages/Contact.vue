@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="contact-text">
                                         <h3>Email</h3>
-                                        <p>your.email@example.com</p>
+                                        <p>mdvasita@gmail.com</p>
                                     </div>
                                 </div>
 
@@ -35,19 +35,11 @@
                                     </div>
                                     <div class="contact-text">
                                         <h3>Location</h3>
-                                        <p>Your City, Country</p>
+                                        <p>Ahmedabad, Gujarat, India</p>
                                     </div>
                                 </div>
 
-                                <div class="contact-method">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-phone"></i>
-                                    </div>
-                                    <div class="contact-text">
-                                        <h3>Phone</h3>
-                                        <p>+1 (123) 456-7890</p>
-                                    </div>
-                                </div>
+                                <!-- Phone removed as not provided -->
                             </div>
 
                             <div class="social-links mt-4">

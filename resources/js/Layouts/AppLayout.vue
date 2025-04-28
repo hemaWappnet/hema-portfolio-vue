@@ -13,7 +13,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; {{ new Date().getFullYear() }} Your Name. All rights reserved.</p>
+                            <p>&copy; {{ new Date().getFullYear() }} Hema Vasita. All rights reserved.</p>
                         </div>
                         <div class="col-md-6 text-md-end">
                             <div class="social-links">

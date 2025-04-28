@@ -33,10 +33,10 @@
                         <Link :href="route('contact')" class="nav-link"
                             :class="{ 'active': route().current('contact') }">Contact</Link>
                     </li>
-                    <li class="nav-item ms-lg-2">
-                        <DarkModeToggle :modelValue="darkMode" @update:modelValue="$emit('toggle-dark-mode')" />
-                    </li>
                 </ul>
+                <div class="dark-toggle-wrapper ms-lg-3 mt-3 mt-lg-0">
+                    <DarkModeToggle :modelValue="darkMode" @update:modelValue="$emit('toggle-dark-mode')" />
+                </div>
             </div>
         </div>
     </nav>
@@ -159,5 +159,10 @@ onUnmounted(() => {
     .dark-mode .navbar-collapse {
         background-color: rgba(40, 42, 54, 0.95);
     }
+}
+
+.dark-toggle-wrapper {
+    display: flex;
+    align-items: center;
 }
 </style>

@@ -18,38 +18,31 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="about-text">
-                            <h2 class="section-title">Your Name</h2>
-                            <h3 class="mb-4">Full Stack Developer</h3>
+                            <h2 class="section-title">Hema Vasita</h2>
+                            <h3 class="mb-4">Software Developer</h3>
 
                             <p class="mb-4">
-                                I'm a passionate full stack developer with expertise in Laravel, Vue.js, and modern web
-                                development practices.
-                                With over 5 years of professional experience, I've helped businesses transform their
-                                ideas into elegant,
-                                functional web applications.
-                            </p>
-
-                            <p class="mb-4">
-                                My approach to development combines technical excellence with creative problem-solving.
-                                I believe in
-                                writing clean, maintainable code and creating intuitive user experiences that delight
-                                users and meet business goals.
+                                I’m a dedicated software developer specializing in full-stack web solutions. With a
+                                strong foundation in information technology and over 2 years of professional experience,
+                                I thrive on building scalable applications, optimizing performance, and continuously
+                                learning the latest industry trends.
                             </p>
 
                             <div class="personal-info mt-4">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="list-unstyled">
-                                            <li><strong>Name:</strong> Your Name</li>
-                                            <li><strong>Email:</strong> your.email@example.com</li>
-                                            <li><strong>Location:</strong> Your City, Country</li>
+                                            <li><strong>Name:</strong> Hema Vasita</li>
+                                            <li><strong>Email:</strong> mdvasita@gmail.com</li>
+                                            <li><strong>Location:</strong> Ahmedabad, GJ, India</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul class="list-unstyled">
-                                            <li><strong>Experience:</strong> 5+ Years</li>
+                                            <li><strong>Experience:</strong> 2+ Years</li>
                                             <li><strong>Availability:</strong> Available for Freelance</li>
-                                            <li><strong>Languages:</strong> English, Spanish</li>
+                                            <li><strong>Languages:</strong> English, Hindi, Gujarati, French (Beginner)
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -74,60 +67,64 @@
                 <h2 class="text-center mb-5">Experience & Education</h2>
 
                 <div class="timeline">
+                    <!-- Experience -->
                     <div class="timeline-item">
                         <div class="timeline-badge">
                             <i class="bi bi-briefcase"></i>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3>Senior Full Stack Developer</h3>
-                                <p class="text-muted">
-                                    <i class="bi bi-building me-2"></i> Tech Company Inc.
+                                <h3>Software Developer</h3>
+                                <p class="text-secondary">
+                                    <i class="bi bi-building me-2"></i> Wappnet Systems Pvt Ltd
                                     <span class="mx-2">|</span>
-                                    <i class="bi bi-calendar me-2"></i> 2022 - Present
+                                    <i class="bi bi-calendar me-2"></i> Jan 2023 - Present
                                 </p>
                             </div>
                             <div class="timeline-body">
                                 <p>
-                                    Led development of multiple web applications using Laravel and Vue.js.
-                                    Implemented modern CI/CD practices and improved application performance by 40%.
+                                    Developing and maintaining full-stack web applications using Laravel and Vue.js.
+                                    Collaborating with cross-functional teams to deliver robust features and optimize
+                                    application performance.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-badge">
-                            <i class="bi bi-briefcase"></i>
-                        </div>
-                        <div class="timeline-panel">
-                            <h3>Web Developer</h3>
-                            <p class="text-muted">
-                                <i class="bi bi-building me-2"></i> Digital Solutions Co.
-                                <span class="mx-2">|</span>
-                                <i class="bi bi-calendar me-2"></i> 2020 - 2022
-                            </p>
-                            <p>
-                                Developed and maintained client websites using Laravel and jQuery.
-                                Collaborated with design team to implement responsive interfaces.
-                            </p>
-                        </div>
-                    </div>
-
+                    <!-- Education: MSc -->
                     <div class="timeline-item">
                         <div class="timeline-badge">
                             <i class="bi bi-mortarboard"></i>
                         </div>
                         <div class="timeline-panel">
-                            <h3>Bachelor of Science in Computer Science</h3>
-                            <p class="text-muted">
-                                <i class="bi bi-building me-2"></i> University Name
+                            <h3>Master of Science in Information Technology</h3>
+                            <p class="text-secondary">
+                                <i class="bi bi-building me-2"></i> Ganpat University
                                 <span class="mx-2">|</span>
-                                <i class="bi bi-calendar me-2"></i> 2016 - 2020
+                                <i class="bi bi-calendar me-2"></i> June 2021 - May 2023
                             </p>
                             <p>
-                                Graduated with honors. Focused on web development and software engineering.
-                                Completed senior project on real-time web applications.
+                                Deepened expertise in software engineering principles, data structures, and advanced web
+                                development methodologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education: BSc -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p class="text-secondary">
+                                <i class="bi bi-building me-2"></i> Ganpat University
+                                <span class="mx-2">|</span>
+                                <i class="bi bi-calendar me-2"></i> June 2018 - May 2021
+                            </p>
+                            <p>
+                                Graduated with a strong foundation in software development, focusing on web technologies
+                                and project-based learning.
                             </p>
                         </div>
                     </div>
@@ -144,6 +141,7 @@ import profileImage from '@/assets/images/profile.gif';
 </script>
 
 <style scoped>
+/* (styles remain unchanged) */
 .about-header {
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;

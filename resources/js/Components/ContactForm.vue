@@ -81,7 +81,7 @@ const submitForm = () => {
     margin: 0 auto;
 }
 
-:deep(.dark-mode) .contact-form-wrapper {
+.dark-mode .contact-form-wrapper {
     background-color: #2c2c44;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -98,18 +98,18 @@ const submitForm = () => {
     box-shadow: 0 0 0 0.25rem rgba(157, 78, 221, 0.25);
 }
 
-:deep(.dark-mode) .form-control {
+.dark-mode .form-control {
     background-color: #373747;
     border-color: #3c3c5a;
     color: #f1f1f1;
 }
 
-:deep(.dark-mode) .form-control:focus {
+.dark-mode .form-control:focus {
     border-color: #bd93f9;
     box-shadow: 0 0 0 0.25rem rgba(189, 147, 249, 0.25);
 }
 
-:deep(.dark-mode) .form-label {
+.dark-mode .form-label {
     color: #f1f1f1;
 }
 
@@ -132,13 +132,13 @@ const submitForm = () => {
     transform: translateY(0);
 }
 
-:deep(.dark-mode) .btn-primary {
+.dark-mode .btn-primary {
     background-color: #bd93f9;
     border-color: #bd93f9;
     color: #282a36;
 }
 
-:deep(.dark-mode) .btn-primary:hover {
+.dark-mode .btn-primary:hover {
     background-color: #a68dfc;
     border-color: #a68dfc;
 }
