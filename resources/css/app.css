@@ -1,0 +1,119 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    --primary: #9d4edd;
+    --primary-dark: #7b2cbf;
+    --primary-light: #c77dff;
+    --secondary: #6a11cb;
+    --background-light: #f8f9fa;
+    --background-dark: #1a1a2e;
+    --text-light: #212529;
+    --text-dark: #f1f1f1;
+    --dark-surface: #2c2c44;
+    --dark-accent: #bd93f9;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+main {
+    padding-top: 70px;
+    /* Account for fixed navbar */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+.dark-mode a {
+    color: var(--dark-accent);
+}
+
+.dark-mode a:hover {
+    color: var(--primary-light);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background: #2c2c44;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background: var(--dark-accent);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Lazy Loading Placeholder */
+.v-lazy-image {
+    filter: blur(10px);
+    transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+    filter: blur(0);
+}
