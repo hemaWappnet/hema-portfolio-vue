@@ -27,7 +27,7 @@
             <div class="container">
                 <div class="row g-4">
                     <div v-for="project in filteredProjects" :key="project.id" class="col-lg-4 col-md-6">
-                        <ProjectCard :project="project" />
+                        <ProjectCard :project="project" :placeholder-url="placeholderUrl" />
                     </div>
                 </div>
             </div>
@@ -41,7 +41,8 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import ProjectCard from '@/Components/ProjectCard.vue';
 
 const props = defineProps({
-    projects: Array
+    projects: Array,
+    placeholderUrl: String
 });
 
 const activeFilter = ref('all');

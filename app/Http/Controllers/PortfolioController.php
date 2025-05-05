@@ -35,9 +35,11 @@ class PortfolioController extends Controller
     public function projects()
     {
         $projects = Project::orderBy('order')->get();
-        
+        $placeholderUrl = asset('assets/images/projects/placeholder.jpeg');
+
         return Inertia::render('Projects', [
             'projects' => $projects,
+            'placeholderUrl' => $placeholderUrl
         ]);
     }
 
@@ -47,7 +49,7 @@ class PortfolioController extends Controller
             ->orderBy('proficiency', 'desc')
             ->get()
             ->groupBy('category');
-        
+
         return Inertia::render('Skills', [
             'skillsByCategory' => $skills,
         ]);

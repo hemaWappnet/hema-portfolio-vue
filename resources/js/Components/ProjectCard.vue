@@ -1,7 +1,7 @@
 <template>
     <div class="project-card" :class="{ 'dark-mode': isDarkMode }">
         <div class="project-image">
-            <v-lazy-image :src="project.image_url" :src-placeholder="'/images/placeholder.jpg'" :alt="project.title" />
+            <img :src="project.image_url_full ?? placeholderUrl" :loading="lazy" :alt="project.title" />
             <div class="project-overlay">
                 <div class="project-links">
                     <a v-if="project.demo_url" :href="project.demo_url" target="_blank"
@@ -34,6 +34,10 @@ import { inject, computed } from 'vue';
 const props = defineProps({
     project: {
         type: Object,
+        required: true
+    },
+    placeholderUrl: {
+        type: String,
         required: true
     }
 });

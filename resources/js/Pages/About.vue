@@ -18,43 +18,65 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="about-text">
-                            <h2 class="section-title">Hema Vasita</h2>
-                            <h3 class="mb-4">Software Developer</h3>
+                            <div class="about-text">
+                                <h2 class="section-title">Hema Vasita</h2>
+                                <h3 class="mb-4">Crafting Digital Experiences, One Line of Code at a Time</h3>
 
-                            <p class="mb-4">
-                                I’m a dedicated software developer specializing in full-stack web solutions. With a
-                                strong foundation in information technology and over 2 years of professional experience,
-                                I thrive on building scalable applications, optimizing performance, and continuously
-                                learning the latest industry trends.
-                            </p>
+                                <p class="mb-4">
+                                    My journey into the world of software development wasn't a straight line; it was
+                                    sparked by a fascination with how technology could solve real-world problems and
+                                    create seamless digital experiences. What began as tinkering with basic HTML and CSS
+                                    quickly evolved into a deep dive into the intricacies of full-stack development. For
+                                    over two years, this passion has fueled my professional endeavors, allowing me to
+                                    contribute to meaningful projects and continuously expand my skillset.
+                                </p>
 
-                            <div class="personal-info mt-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul class="list-unstyled">
-                                            <li><strong>Name:</strong> Hema Vasita</li>
-                                            <li><strong>Email:</strong> mdvasita@gmail.com</li>
-                                            <li><strong>Location:</strong> Ahmedabad, GJ, India</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="list-unstyled">
-                                            <li><strong>Experience:</strong> 2+ Years</li>
-                                            <li><strong>Availability:</strong> Available for Freelance</li>
-                                            <li><strong>Languages:</strong> English, Hindi, Gujarati, French (Beginner)
-                                            </li>
-                                        </ul>
+                                <p class="mb-4">
+                                    I see code not just as a set of instructions, but as a canvas for innovation.
+                                    Whether it's architecting a robust backend with Laravel or crafting dynamic user
+                                    interfaces with Vue.js, I thrive on the challenge of transforming ideas into
+                                    functional and scalable applications. Collaboration is key in this process, and I
+                                    value the synergy that comes from working with diverse teams to overcome hurdles and
+                                    deliver exceptional results.
+                                </p>
+
+                                <p class="mb-4">
+                                    Beyond the technical aspects, I'm a firm believer in continuous learning. The
+                                    digital landscape is ever-evolving, and staying curious and adaptable is paramount.
+                                    You'll often find me exploring the latest industry trends, experimenting with new
+                                    technologies, and seeking opportunities to refine my craft.
+                                </p>
+
+                                <div class="personal-info mt-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><strong>Name:</strong> Hema Vasita</li>
+                                                <li><strong>Email:</strong> mdvasita@gmail.com</li>
+                                                <li><strong>Location:</strong> Ahmedabad, GJ, India</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><strong>Experience:</strong> 2+ Years of Passion-Driven Development
+                                                </li>
+                                                <li><strong>Availability:</strong> Open to Exciting Freelance
+                                                    Opportunities</li>
+                                                <li><strong>Languages:</strong> Fluent in English, Hindi, Gujarati;
+                                                    Exploring the Charm of French</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="about-actions mt-4">
-                                <a href="/downloads/resume.pdf" target="_blank" class="btn btn-primary me-3">
-                                    <i class="bi bi-download me-2"></i> Download Resume
-                                </a>
-                                <Link :href="route('contact')" class="btn btn-outline-primary">
-                                <i class="bi bi-envelope me-2"></i> Contact Me
-                                </Link>
+                                <div class="about-actions mt-4">
+                                    <a href="/downloads/resume.pdf" target="_blank" class="btn btn-primary me-3">
+                                        <i class="bi bi-download me-2"></i> Dive Deeper: Download Resume
+                                    </a>
+                                    <Link :href="route('contact')" class="btn btn-outline-primary">
+                                    <i class="bi bi-envelope me-2"></i> Let's Connect!
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
