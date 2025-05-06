@@ -1,7 +1,7 @@
 <template>
     <div class="project-card" :class="{ 'dark-mode': isDarkMode }">
         <div class="project-image">
-            <img :src="project.image_url_full ?? placeholderUrl" :loading="lazy" :alt="project.title" />
+            <img :src="imageUrl ?? placeholderUrl" :loading="lazy" :alt="project.title" @error="handleImageError" />
             <div class="project-overlay">
                 <div class="project-links">
                     <a v-if="project.demo_url" :href="project.demo_url" target="_blank"
@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { inject, computed } from 'vue';
+import { inject, computed, ref } from 'vue';
 
 const props = defineProps({
     project: {
@@ -44,6 +44,14 @@ const props = defineProps({
 
 const darkMode = inject('darkMode', false);
 const isDarkMode = computed(() => darkMode.value);
+
+// Create a ref to hold the image source
+const imageUrl = ref(props.project.image_url_full);
+
+// Function to handle image loading errors
+const handleImageError = () => {
+    imageUrl.value = props.placeholderUrl;
+};
 </script>
 
 <style scoped>

@@ -133,7 +133,7 @@
                     </div>
 
                     <!-- Education: BSc -->
-                    <div class="timeline-item">
+                    <div class="timeline-item mb-0">
                         <div class="timeline-badge">
                             <i class="bi bi-mortarboard"></i>
                         </div>
@@ -148,6 +148,13 @@
                                 Graduated with a strong foundation in software development, focusing on web technologies
                                 and project-based learning.
                             </p>
+                        </div>
+                    </div>
+
+                    <!-- Starting Point -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="bi bi-fast-forward"></i>
                         </div>
                     </div>
                 </div>
