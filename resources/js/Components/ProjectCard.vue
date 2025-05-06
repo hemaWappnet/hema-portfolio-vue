@@ -4,13 +4,11 @@
             <img :src="imageUrl ?? placeholderUrl" :loading="lazy" :alt="project.title" @error="handleImageError" />
             <div class="project-overlay">
                 <div class="project-links">
-                    <a v-if="project.demo_url" :href="project.demo_url" target="_blank"
-                        class="btn btn-primary btn-sm me-2">
-                        <i class="bi bi-display me-1"></i> Live Demo
+                    <a v-if="project.demo_url" :href="project.demo_url" target="_blank" class="live-demo-button">
+                        <i class="bi bi-display me-1"></i> View Live
                     </a>
-                    <a v-if="project.github_url" :href="project.github_url" target="_blank"
-                        class="btn btn-outline-light btn-sm">
-                        <i class="bi bi-github me-1"></i> Code
+                    <a v-if="project.github_url" :href="project.github_url" target="_blank" class="code-button">
+                        <i class="bi bi-github me-1"></i> Repository
                     </a>
                 </div>
             </div>
@@ -45,16 +43,15 @@ const props = defineProps({
 const darkMode = inject('darkMode', false);
 const isDarkMode = computed(() => darkMode.value);
 
-// Create a ref to hold the image source
 const imageUrl = ref(props.project.image_url_full);
 
-// Function to handle image loading errors
 const handleImageError = () => {
     imageUrl.value = props.placeholderUrl;
 };
 </script>
 
 <style scoped>
+/* Existing styles remain */
 .project-card {
     border-radius: 12px;
     overflow: hidden;
@@ -80,7 +77,6 @@ const handleImageError = () => {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-    /* 16:9 aspect ratio */
 }
 
 .project-image img {
@@ -176,5 +172,72 @@ const handleImageError = () => {
 .dark-mode .tech-badge {
     background-color: rgba(189, 147, 249, 0.2);
     color: #bd93f9;
+}
+
+/* Styles for the "Live Demo" button */
+.live-demo-button {
+    background-color: #9d4edd;
+    color: white;
+    border: 2px solid #9d4edd;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.live-demo-button:hover {
+    background-color: #7b2cbf;
+    border-color: #7b2cbf;
+    color: white;
+}
+
+.dark-mode .live-demo-button {
+    background-color: #bd93f9;
+    color: #282a36;
+    border-color: #bd93f9;
+}
+
+.dark-mode .live-demo-button:hover {
+    background-color: #a68dfc;
+    border-color: #a68dfc;
+    color: #282a36;
+}
+
+/* Styles for the "Code" button (optional, for consistency) */
+.code-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.code-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-color: white;
+}
+
+.dark-mode .code-button {
+    color: #f8f8f2;
+    border-color: #f8f8f2;
+}
+
+.dark-mode .code-button:hover {
+    background-color: rgba(248, 248, 242, 0.2);
+    color: #f8f8f2;
+    border-color: #f8f8f2;
 }
 </style>
