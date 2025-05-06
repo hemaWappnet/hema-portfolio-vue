@@ -10,7 +10,7 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="hero-content">
-                            <h1 class="display-3 fw-bold mb-4">Hello, I'm <span class="highlight">Hema Vasita</span></h1>
+                            <h1 class="display-3 fw-bold mb-4">Hello, I'm <span class="highlight">{{ $page.props.dev?.name }}</span></h1>
                             <h2 class="fs-3 mb-4">Software Developer</h2>
                             <p class="lead mb-4">
                                 Building elegant solutions to complex problems with Laravel, Vue.js, and modern web

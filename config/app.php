@@ -123,4 +123,10 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'dev' => [
+        'name' => env('DEV_NAME'),
+        'email' => env('DEV_EMAIL'),
+        'location' => env('DEV_LOCATION'),
+    ],
+
 ];

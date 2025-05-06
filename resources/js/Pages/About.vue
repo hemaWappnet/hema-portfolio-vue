@@ -19,7 +19,7 @@
                     <div class="col-lg-7">
                         <div class="about-text">
                             <div class="about-text">
-                                <h2 class="section-title">Hema Vasita</h2>
+                                <h2 class="section-title">{{ $page.props.dev?.name }}</h2>
                                 <h3 class="mb-4">Crafting Digital Experiences, One Line of Code at a Time</h3>
 
                                 <p class="mb-4">
@@ -51,9 +51,9 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul class="list-unstyled">
-                                                <li><strong>Name:</strong> Hema Vasita</li>
-                                                <li><strong>Email:</strong> mdvasita@gmail.com</li>
-                                                <li><strong>Location:</strong> Ahmedabad, GJ, India</li>
+                                                <li><strong>Name:</strong> {{ $page.props.dev?.name }}</li>
+                                                <li><strong>Email:</strong> {{ $page.props.dev?.email }}</li>
+                                                <li><strong>Location:</strong> {{ $page.props.dev?.location }}</li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6">

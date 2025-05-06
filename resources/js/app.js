@@ -9,7 +9,7 @@ import 'vue-toast-notification/dist/theme-bootstrap.css';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 // import VLazyImage from "v-lazy-image/v2";
 
-const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Developer Portfolio';
+const appName = import.meta.env.VITE_APP_NAME || 'Developer Portfolio';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
@@ -18,8 +18,7 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
-            .use(VueToastPlugin)
-            // .use(VLazyImage)
+            // .use(VueToastPlugin)
             .mount(el);
     },
     progress: {

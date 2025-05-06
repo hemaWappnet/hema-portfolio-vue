@@ -2,39 +2,42 @@
     <div class="contact-form-wrapper">
         <form @submit.prevent="submitForm" class="contact-form">
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label">Your Name</label>
                 <input type="text" class="form-control" id="name" v-model="form.name"
-                    :class="{ 'is-invalid': errors?.name }" required>
-                <div v-if="errors?.name" class="invalid-feedback">{{ errors?.name }}</div>
+                    :class="{ 'is-invalid': form.errors.name }" required>
+                <div v-if="form.errors.name" class="invalid-feedback">{{ form.errors.name }}</div>
             </div>
 
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Your Email</label>
                 <input type="email" class="form-control" id="email" v-model="form.email"
-                    :class="{ 'is-invalid': errors?.email }" required>
-                <div v-if="errors?.email" class="invalid-feedback">{{ errors?.email }}</div>
+                    :class="{ 'is-invalid': form.errors.email }" required>
+                <div v-if="form.errors.email" class="invalid-feedback">{{ form.errors.email }}</div>
             </div>
 
             <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
+                <label for="subject" class="form-label">Subject of Your Inquiry</label>
                 <input type="text" class="form-control" id="subject" v-model="form.subject"
-                    :class="{ 'is-invalid': errors?.subject }" required>
-                <div v-if="errors?.subject" class="invalid-feedback">{{ errors?.subject }}</div>
+                    :class="{ 'is-invalid': form.errors.subject }" required>
+                <div v-if="form.errors.subject" class="invalid-feedback">{{ form.errors.subject }}</div>
             </div>
 
             <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
+                <label for="message" class="form-label">Your Message</label>
                 <textarea class="form-control" id="message" rows="5" v-model="form.message"
-                    :class="{ 'is-invalid': errors?.message }" required></textarea>
-                <div v-if="errors?.message" class="invalid-feedback">{{ errors?.message }}</div>
+                    :class="{ 'is-invalid': form.errors.message }" required></textarea>
+                <div v-if="form.errors.message" class="invalid-feedback">{{ form.errors.message }}</div>
             </div>
 
             <div class="d-grid">
                 <button type="submit" class="btn btn-primary" :disabled="processing">
-                    <span v-if="processing" class="spinner-border spinner-border-sm me-2" role="status"
+                    <span v-if="processing" class="spinner-border spinner-border-sm me-2" output="status"
                         aria-hidden="true"></span>
                     {{ processing ? 'Sending...' : 'Send Message' }}
                 </button>
+                <div v-if="form.recentlySuccessful" class="mt-3 text-success">
+                    Thank you for your message! I'll get back to you soon.
+                </div>
             </div>
         </form>
     </div>
