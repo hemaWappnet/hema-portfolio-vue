@@ -108,6 +108,7 @@ import { ref } from 'vue';
 import { usePage } from '@inertiajs/vue3';
 
 const devEmail = usePage().props.dev?.email
+import.meta.env.VITE_DEV_EMAIL;
 
 const sendSpecificEmail = (type) => {
     let subject = '';

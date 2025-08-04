@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\DefaultEmail;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMessage;
 
 class ContactController extends Controller
 {
@@ -22,8 +22,8 @@ class ContactController extends Controller
         $message = Message::create($validated);
 
         // Optionally send email notification
-        // Mail::to('your-email@example.com')->send(new ContactMessage($message));
+        Mail::to(config('app.dev.email'))->send(new DefaultEmail($message));
 
-        return back()->with('success', 'Message sent successfully! I will respond to you soon.');
+        return back()->with('success', "Thank you for your message! I'll get back to you soon.");
     }
 }

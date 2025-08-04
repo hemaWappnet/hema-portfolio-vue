@@ -18,7 +18,14 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
-            // .use(VueToastPlugin)
+            .plugin(VueToastPlugin, {
+                // You can set your default options here
+                position: 'top-right',
+                duration: 5000,
+                dismissible: true,
+                type: 'default',
+                // Add any other options you want to set globally
+            })
             .mount(el);
     },
     progress: {
